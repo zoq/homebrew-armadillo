@@ -19,7 +19,7 @@ class Armadillo < Formula
   depends_on "szip"
 
   def install
-    system "cmake", ".", "-DDETECT_HDF5=ON", *std_cmake_args
+    system "cmake", ".", "-DDETECT_HDF5=OFF", *std_cmake_args
     system "make", "install"
   end
 
